@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 Lsaoren, 111, LIC=GMZI6-D25W0-IIT5V-PP9CZ-8YHS0-64VNF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  C:\tool\KEIL_C51\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Lsaoren\Desktop\STM32Project\温湿度采集系统\系统代码工程\STM32单片机代码\2、数据的采集和显示 - 副本 - 副本 - 副本 - 副本\Project\RVMDK（uv5）\BH-F103.uvprojx
+Project File Date:  03/28/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\tool\KEIL_C51\ARM\ARMCC\Bin'
+Build target 'Led'
+compiling main.c...
+..\..\BSP\bsp_key.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\BSP\bsp_Alarm.h(15): warning:  #1295-D: Deprecated declaration Alarm_OFF - give arg types
+  void Alarm_OFF();
+..\..\BSP\bsp_Alarm.h(16): warning:  #1295-D: Deprecated declaration Alarm_ON - give arg types
+  void Alarm_ON();
+..\..\BSP\bsp_Alarm.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\BSP\bsp_led.h(7): warning:  #47-D: incompatible redefinition of macro "LED_GPIO_PORT"  (declared at line 10 of "..\..\BSP\bsp_Alarm.h")
+  #define LED_GPIO_PORT GPIOA
+..\..\BSP\bsp_led.h(8): warning:  #47-D: incompatible redefinition of macro "LED_GPIO_CLK"  (declared at line 11 of "..\..\BSP\bsp_Alarm.h")
+  #define LED_GPIO_CLK  RCC_APB2Periph_GPIOA
+..\..\BSP\bsp_led.h(9): warning:  #47-D: incompatible redefinition of macro "LED_GPIO_PIN"  (declared at line 12 of "..\..\BSP\bsp_Alarm.h")
+  #define LED_GPIO_PIN  GPIO_Pin_4
+..\..\BSP\bsp_usart.h(21): warning:  #1295-D: Deprecated declaration Usart_Init - give arg types
+  void Usart_Init();
+..\..\Main\main.c(78): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			 OLED_ShowCH(20,3,(char*)oled_Temp);
+..\..\Main\main.c(80): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			 OLED_ShowCH(20,5,(char*)oled_Hum);			
+..\..\Main\main.c(158): warning:  #188-D: enumerated type mixed with another type
+  			currentState = (currentState + 1) % 3;	
+..\..\Main\main.c(195): warning:  #223-D: function "memset" declared implicitly
+  	memset(PUBLIS_BUF, 0, sizeof(PUBLIS_BUF));
+..\..\Main\main.c(192): warning:  #177-D: variable "Temp"  was declared but never referenced
+  	uint8_t Temp = DHT11_Data.temp_int;
+..\..\Main\main.c(193): warning:  #177-D: variable "Hum"  was declared but never referenced
+  	uint8_t Hum = DHT11_Data.humi_int;
+..\..\Main\main.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=32040 RO-data=632 RW-data=2572 ZI-data=3524  
+FromELF: creating hex file...
+"..\..\Output\流水灯.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Led
+  C:\tool\KEIL_C51\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
